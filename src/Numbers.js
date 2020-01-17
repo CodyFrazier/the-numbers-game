@@ -11,7 +11,8 @@ function Numbers(numbers){
 			<ul className = { style.list }>{ numbers.numbers.filter(num => { return num % 2 }).map((num, idx) => { return ( <li key = { idx }>{ num }</li> )}) }</ul>
 			<h3>Even Numbers ({ numbers.numbers.filter(num => !(num % 2)).length })</h3>
 			<ul className = { style.list }>{ numbers.numbers.filter(num => { return !(num % 2) }).map((num, idx) => { return ( <li key = { idx }>{ num }</li> )}) }</ul>
-		</div>)
+		</div>
+	)
 }
 
 export default Numbers;

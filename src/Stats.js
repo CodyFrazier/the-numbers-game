@@ -9,7 +9,7 @@ function Stats({ numbers }){
 		}
 		return acc;
 	}, [])
-	return (<div id = {style.statBox}>You have { uniqueNumList.length ? uniqueNumList.length : 0 } unique numbers.</div>)
+	return (<div id = {style.statBox}>You have { uniqueNumList.length } unique numbers.</div>)
 }
 
 export default Stats;
